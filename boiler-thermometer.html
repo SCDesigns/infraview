@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="home"  >
+<html lang="en" id="home" >
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,63 +48,31 @@
       </div>
     </section>
 
-		<section id="links">
+		<section id="boiler">
 	    <div class="link-row">
+        <div class="toggle-list">
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/about.html')" value="About"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/principles-of-operation.html')" value="Principles of Operation"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/apps-and-installations.html')" value="Apps & Installations"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/specs.html')" value="Specs"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/natural-gas.html')" value="Natural Gas"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/technical-paper.html')" value="Tech Paper"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/manuals.html')" value="Manuals"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/contact.html')" value="Contact"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/sensor-calibration.html')" value="Sensor Calibration"/>
+        </div>
 	      <div class="cols container-lg">
 	        <div class="left">
+            <iframe id="boiler_iframe">
+            </iframe>
+	        </div>
+
+	        <div class="right">
 	          <h2 class="common-Uppercase">
 	            Infra-View&reg; Boiler Thermometer
 	          </h2>
-	          <!-- <p class="common-BodyText">
-	            Measure FEGT from 250°F - 3,000°F
-	          </p> -->
-						<img class="thermometer" src="./assets/img/landing/boiler-thermometer.jpg"/>
-	          <a class="button common-Link--arrow" href="boiler-thermometer.html">
-	            Learn More
-	          </a>
-	        </div>
-
-	        <div class="right">
-	          <h2 class="common-Uppercase">
-	            Infra-View&reg; GB/IS Generator Bus Bar Thermometer
-	          </h2>
-	          <!-- <p class="common-BodyText">
-							Measure Iso-Phase Bus Temperatures.
-	          </p> -->
-						<img class="thermometer" src="./assets/img/landing/generator-thermometer.jpg"/>
-	          <a class="button common-Link--arrow" href="http://www.infra-view.com/generator-bus-bar-thermometer/" >
-	            Learn More
-	          </a>
-	        </div>
-	      </div>
-    	</div>
-
-			<div class="link-row">
-	      <div class="cols container-lg">
-	        <div class="left">
-	          <h2 class="common-Uppercase">
-	            Infra-View&reg; Portable Boiler Thermometer
-	          </h2>
-	          <!-- <p class="common-BodyText">
-							Portable Data Logging of FEGT
-	          </p> -->
-						<img class="thermometer" src="./assets/img/landing/portable-boiler-thermometer.jpg"/>
-	          <a class="button common-Link--arrow" href="http://www.infra-view.com/infrared-boiler-thermometer/" >
-	            Learn More
-	          </a>
-	        </div>
-
-	        <div class="right">
-	          <h2 class="common-Uppercase">
-	            Infra-View&reg; Natural Gas Fired Infrared Boiler / Furnace Thermometer
-	          </h2>
-	          <!-- <p class="common-BodyText">
-							Measure Iso-Phase Bus Temperatures.
-	          </p> -->
-						<img class="thermometer" src="./assets/img/landing/natgas-thermometer.jpg"/>
-	          <a class="button common-Link--arrow" href="http://www.infra-view.com/generator-bus-bar-thermometer/" >
-	            Learn More
-	          </a>
+						<img class="thermometer product" src="./assets/img/landing/boiler-thermometer.jpg"/>
+            <img class="thermometer product" src="./assets/img/landing/boiler-thermometer-2.jpg"/>
 	        </div>
 	      </div>
     	</div>
@@ -131,4 +99,11 @@
 	    </article>
 		</section>
 	</body>
+
+
+<script>
+  function load(page) {
+    document.getElementById("boiler_iframe").src = page;
+  }
+</script>
 </html>
