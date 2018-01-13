@@ -91,18 +91,9 @@ p {
     -webkit-margin-after: 1em
 }
 
-html|*>svg {
-    transform-origin: 50% 50% 0
-}
-
 .globalNav .colorize:hover,
 .globalNav a:hover {
     color: #32325d
-}
-
-.globalNav .colorize {
-    color: #6772e5;
-    transition: color .1s ease
 }
 
 .container-lg {
@@ -139,77 +130,93 @@ html|*>svg {
     perspective: 2000px
 }
 
+.mini-menu {
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: #A7C1D5;
+  position: relative;
+  padding: 0 10px;
+  align-items: center;
+}
+
+#mini-menu-title {
+  color: #D32F2F;
+  margin-left: 15px;
+}
+
+.product-page {
+  position: relative;
+}
+
 .globalNav .navSection.logo {
-    position: absolute;
-    top: 0;
-    left: 0
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
 }
 
 .globalNav .navSection.logo .rootLink {
-    padding-top: 25px!important;
-    padding-left: 25px!important
+  padding-top: 25px!important;
+  padding-left: 25px!important
 }
 
 .globalNav .rootLink {
-    display: inline-block;
-    height: 50px;
-    white-space: nowrap;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-size: 17px;
-    line-height: 50px;
-    font-weight: 400;
-    margin: 0;
-    padding: 0 10px
+  display: inline-block;
+  height: 50px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 17px;
+  line-height: 50px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 10px
 }
 
 .form:before,
 .mail:before,
 .phone:before {
-    padding-right: 10px;
-    font: 400 16px
-}
-
-.globalNav a {
-    color: #6772e5;
-    transition: color .1s
+  padding-right: 10px;
+  font: 400 16px
 }
 
 .button,
 .button:hover {
-    transition: all .15s ease
+  transition: all .15s ease
 }
 
 .globalNav .item-home h1 {
-    line-height: 50px;
-    font-size: 20px;
-    margin: 0;
-    color: inherit
+  line-height: 50px;
+  font-size: 20px;
+  margin: 0;
+  color: inherit
 }
 
 #intro,
 #landing h1 {
-    font-weight: 600;
-    color: #fff
+  font-weight: 600;
+  color: #fff
 }
 
 .globalNav .item-home svg {
-    vertical-align: -5px
+  vertical-align: -5px
 }
 
 #landing {
-    background: url(../img/banner.jpg) center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative
+  background: url(../img/banner.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
 }
 
 #landing h1 {
-    font-size: 30px
+  font-size: 30px
 }
 
 #intro {
@@ -237,7 +244,6 @@ html|*>svg {
   border-style: none;
   border-bottom: 1px solid #f6f9fc;
   border-width: 1px;
-  border-radius: 2px;
   padding: 20px;
   color: #FF5252;
   font-size: 14px;
@@ -252,9 +258,6 @@ html|*>svg {
   border-color: #f6f9fc;
   background-color: #FF5252;
   color: #FFFFFF;
-  /* border-style: solid;
-  border-width: 10px;
-  border-radius: 1px; */
   border-bottom: 2px solid #FFFFFF;
   outline: 0;
 }
