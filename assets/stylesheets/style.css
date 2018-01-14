@@ -266,8 +266,15 @@ p {
 #boiler_iframe, #boiler_iframe_images {
   border: none;
   width: 100%;
+  overflow:scroll;
+}
+
+#boiler_iframe {
   height: 100%;
-  overflow-y: visible;
+}
+
+#boiler_iframe_images {
+  height: 90%;
 }
 
 .product {
