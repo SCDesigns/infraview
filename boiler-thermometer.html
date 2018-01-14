@@ -43,19 +43,19 @@
 		<section id="boiler">
 	    <div class="link-row">
         <div class="toggle-list">
-          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/about.html')" value="About"/>
-          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/principles-of-operation.html')" value="Principles of Operation"/>
-          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/apps-and-installations.html')" value="Apps & Installations"/>
-          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/specs.html')" value="Specs"/>
-          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/natural-gas.html')" value="Natural Gas"/>
-          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/technical-paper.html')" value="Tech Paper"/>
-          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/manuals.html')" value="Manuals"/>
-          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/contact.html')" value="Contact"/>
-          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/sensor-calibration.html')" value="Sensor Calibration"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_about.html')" value="About"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_principles-of-operation.html')" value="Principles of Operation"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_apps-and-installations.html')" value="Apps & Installations"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_specs.html')" value="Specs"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_natural-gas.html')" value="Natural Gas"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_technical-paper.html')" value="Tech Paper"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_manuals.html')" value="Manuals"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_contact.html')" value="Contact"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_sensor-calibration.html')" value="Sensor Calibration"/>
         </div>
-	      <div class="cols container-lg">
+	      <div class="cols container-lg product-page">
 	        <div class="left">
-            <iframe id="boiler_iframe" src="./boiler-thermometer-info/about.html">
+            <iframe id="boiler_iframe" src="./boiler-thermometer-info/_about.html">
             </iframe>
 	        </div>
 
@@ -63,8 +63,10 @@
 	          <h2 class="common-Uppercase">
 	            Infra-View&reg; Boiler Thermometer
 	          </h2>
-						<img class="thermometer product" src="./assets/img/landing/boiler-thermometer.jpg"/>
-            <img class="thermometer product" src="./assets/img/landing/boiler-thermometer-2.jpg"/>
+						<iframe id="boiler_iframe_images" src="./boiler-thermometer-info/images/_default.html">
+            </iframe>
+						<!-- <img class="thermometer product" src="./assets/img/landing/boiler-thermometer.jpg"/>
+            <img class="thermometer product" src="./assets/img/landing/boiler-thermometer-2.jpg"/> -->
 	        </div>
 	      </div>
     	</div>
@@ -94,8 +96,9 @@
 
 
 <script>
-  function load(page) {
+  function load(page, images) {
     document.getElementById("boiler_iframe").src = page;
+		document.getElementById("boiler_iframe_images").src = images;
   }
 </script>
 </html>
