@@ -16,7 +16,6 @@
     <meta property="og:title" content="JNT Technical Services">
     <meta property="og:url" content="http://www.infra-view.com/">
     <meta property="og:description" content="Infra-View® Infrared Boiler Thermometer is a patented, remote sensing infrared detector, supplied with a rugged protective-cooling jacket that can be permanently flange mounted on any port, door or penetration into the boiler or furnace.">
-
   </head>
 	<body>
     <header>
@@ -48,18 +47,29 @@
           <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_apps-and-installations.html', './boiler-thermometer-info/images/_apps-and-installations.html')" value="Apps & Installations"/>
           <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_specs.html', './boiler-thermometer-info/images/_default.html')" value="Specs"/>
           <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_natural-gas.html', './boiler-thermometer-info/images/_natural-gas.html')" value="Natural Gas"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_technical-paper.html')" value="Tech Paper"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_manuals.html')" value="Manuals"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_contact.html')" value="Contact"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_sensor-calibration.html')" value="Sensor Calibration"/>
+        </div>
+				<div class="mobile-toggle-list">
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_about.html', './boiler-thermometer-info/images/_default.html')" value="About"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_principles-of-operation.html', './boiler-thermometer-info/images/_default.html')" value="Principles of Operation"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_apps-and-installations.html', './boiler-thermometer-info/images/_apps-and-installations.html')" value="Apps & Installations"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_specs.html', './boiler-thermometer-info/images/_default.html')" value="Specs"/>
+          <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_natural-gas.html', './boiler-thermometer-info/images/_natural-gas.html')" value="Natural Gas"/>
           <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_technical-paper.html', './boiler-thermometer-info/images/_default.html')" value="Tech Paper"/>
           <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_manuals.html', './boiler-thermometer-info/images/_default.html')" value="Manuals"/>
           <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_contact.html', './boiler-thermometer-info/images/_default.html')" value="Contact"/>
           <input type="button" class="info-toggle" onclick="load('./boiler-thermometer-info/_sensor-calibration.html', './boiler-thermometer-info/images/_default.html')" value="Sensor Calibration"/>
         </div>
 	      <div class="cols container-lg product-page">
-	        <div class="left">
+	        <div class="left" id="content">
             <iframe id="boiler_iframe" src="./boiler-thermometer-info/_about.html">
             </iframe>
 	        </div>
 
-	        <div class="right">
+	        <div class="right" id="images">
 	          <h2 class="common-Uppercase">
 	            Infra-View&reg; Boiler Thermometer
 	          </h2>
@@ -94,11 +104,16 @@
 		</section>
 	</body>
 
-
-<script>
-  function load(page, images) {
-    document.getElementById("boiler_iframe").src = page;
-		document.getElementById("boiler_iframe_images").src = images;
-  }
-</script>
+	<script>
+	  function load(page, images) {
+			document.getElementById("boiler_iframe").src = page;
+			if (images){
+				document.getElementById("images").style.display = "block";
+				document.getElementById("boiler_iframe_images").src = images;
+			} else {
+				document.getElementById("images").style.display = "none";
+				document.getElementById("content").style.borderRight = "none";
+			}
+	  }
+	</script>
 </html>

@@ -234,7 +234,6 @@ p {
 }
 
 .toggle-list {
-  display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
@@ -266,7 +265,7 @@ p {
 #boiler_iframe, #boiler_iframe_images {
   border: none;
   width: 100%;
-  overflow:scroll;
+  overflow: visible;
 }
 
 #boiler_iframe {
@@ -274,7 +273,7 @@ p {
 }
 
 #boiler_iframe_images {
-  height: 90%;
+  height: 95%;
 }
 
 .product {
@@ -501,6 +500,13 @@ td {
       margin-top: 50px;
       font-size: 90%;
     }
+    #boiler_iframe {
+      min-height: 500px;
+    }
+
+    #boiler_iframe_images {
+      min-height: 500px;
+    }
 }
 
 @media only screen and (min-width:696px) {
@@ -592,4 +598,21 @@ td {
     #copyright {
       margin-top: 105px;
     }
+}
+
+@media only screen and (max-width:1150px) {
+  .toggle-list {
+    display: none;
+  }
+  .mobile-toggle-list {
+    display: flex;
+  }
+}
+@media only screen and (min-width:1150px) {
+  .toggle-list {
+    display: flex;
+  }
+  .mobile-toggle-list {
+    display: none;
+  }
 }
