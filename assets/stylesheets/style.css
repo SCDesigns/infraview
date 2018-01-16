@@ -41,7 +41,6 @@ body {
     background-origin: initial;
     background-clip: initial;
     min-height: 100%;
-    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -92,6 +91,11 @@ p {
     -webkit-margin-after: 1em
 }
 
+button {
+  border: none;
+  background-color: none;
+}
+
 .globalNav .colorize:hover,
 .globalNav a:hover {
     color: #32325d
@@ -110,7 +114,8 @@ p {
 
 .left,
 .right {
-    padding: 20px 0;
+  display: flex;
+  flex-direction: column;
     border-image-source: initial;
     border-image-slice: initial;
     border-image-width: initial;
@@ -227,7 +232,6 @@ p {
 }
 
 .thermometer {
-  max-width: 350px;
   margin: 0 auto;
   padding: 10px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
@@ -280,14 +284,6 @@ p {
   margin: 30px auto;
 }
 
-.left .thermometer {
-  margin: 25px auto 0;
-}
-
-/* .thermometer:hover {
-  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-} */
-
 .common-BodyText {
     font-weight: 400;
     font-size: 18px;
@@ -319,7 +315,6 @@ p {
 
 .button,
 .globalFooterNav {
-    white-space: nowrap;
     font-size: 15px
 }
 
@@ -331,7 +326,7 @@ p {
     padding: 65px 0 55px;
     color: #8898aa;
     line-height: 30px;
-    border-top: 2px solid rgba(207, 215, 223, .25)
+    border-top: 1px solid rgba(207, 215, 223, .25)
 }
 
 .globalFooterNav .siteNav {
@@ -342,13 +337,7 @@ p {
     -ms-flex-positive: 1;
     flex-grow: 1;
     -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-button {
-    background: #fff;
-    border: none;
-    color: #FF5252
+    justify-content: center;
 }
 
 .button {
@@ -365,7 +354,7 @@ button {
     color: #FF5252
 }
 
-button:hover, .button:hover {
+.button:hover {
     background: #FFCDD2;
     color: #D32F2F
 }
@@ -383,7 +372,17 @@ a {
 
 #copyright {
   text-align: center;
-  display: inline-flex;
+}
+
+#copyright a {
+  color: #D32F2F;
+}
+
+#logo-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
 }
 
 #about-bullets {
@@ -461,9 +460,20 @@ td {
 #footer-logo {
   display: block;
 }
+
+#toggle-list ul li:hover, #toggle-list ul li:focus {
+  background: #FFCDD2;
+  color: #D32F2F
+}
+
+.thermometer {
+  margin: 0 auto;
+  display: block;
+}
+
 @media only screen and (min-width:300px) {
     #landing {
-        height: 600px
+        height: 75vh;
     }
     #split {
         background-color: #FF5252;
@@ -478,13 +488,15 @@ td {
     #intro {
         max-width: 250px
     }
+    .thermometer {
+      max-width: 320px;
+    }
+    #logo-copy {
+      margin: 60px auto;
+    }
 }
 
 @media only screen and (max-width:695px) {
-    .left,
-    .right {
-        display: block;
-    }
     .left {
         border-bottom: 1px solid #f6f9fc;
     }
@@ -492,9 +504,7 @@ td {
         border: none;
     }
     #footer-logo {
-        max-width: 75vw;
-        padding-top: 50px;
-        margin: 0 auto
+      padding-top: 50px;
     }
     #copyright {
       margin-top: 50px;
@@ -503,28 +513,30 @@ td {
     #boiler_iframe {
       min-height: 500px;
     }
-
     #boiler_iframe_images {
       min-height: 500px;
     }
+    .left img.thermometer {
+      margin-top:
+    }
+    #logo-copy {
+      margin: 40px auto;
+    }
 }
 @media only screen and (min-width:695px) {
-    .globalNav .rootLink {
-        padding: 0 calc(10px + (100vw - 670px) * .040541)
-    }
     .link-row .cols {
-        display: -ms-flexbox;
-        display: flex
+      display: -ms-flexbox;
+      display: flex
     }
     #intro {
-        max-width: 300px
+      max-width: 300px
     }
     #landing {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 600px
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 85vh;
     }
     .left, .right {
       border: 1px solid #f6f9fc;
@@ -541,62 +553,52 @@ td {
       padding-left: 20px;
       border-width: 0 0 0 1px
     }
-    .globalFooterNav .siteNav {
-      -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap
-    }
-    .globalFooterNav .siteNav .column {
-      -ms-flex-preferred-size: auto!important;
-      flex-basis: auto!important
-    }
-    #footer-logo {
-      max-width: 50vw;
-    }
     #copyright {
       margin-top: 110px;
+      list-style: none;
     }
 }
 
-@media only screen and (min-width:880px) {
+@media only screen and (min-width:831px) {
     #landing {
-      height: 720px
+      height: 100vh;
     }
     #split {
-      width: 250px
+      width: 250px;
     }
     #landing h1 {
-      font-size: 40px
+      font-size: 40px;
     }
     .globalFooterNav .siteNav {
       -ms-flex-positive: 0;
-      flex-grow: 0
-    }
-    #footer-logo {
-      max-width: 45vw;
+      flex-grow: 0;
     }
     #copyright {
-      margin-top: 135px;
+      margin-top: 95px;
+    }
+    .thermometer {
+      max-width: 350px;
     }
 }
 
 @media only screen and (min-width:1040px) {
     .globalNav .rootLink {
-      padding: 0 25px
+      padding: 0 25px;
     }
     #split {
       width: 300px
     }
     .left {
-      padding: 35px 70px 35px 0
+      padding: 35px 70px 35px 0;
     }
     .right {
-      padding: 35px 0 35px 70px
+      padding: 35px 0 35px 70px;
     }
     #footer-logo {
-      max-width: 40vw
+      max-width: 75vw
     }
     #copyright {
-      margin-top: 105px;
+      margin-top: 75px;
     }
 }
 @media only screen and (max-width:1150px) {
@@ -606,9 +608,8 @@ td {
   #hamburger {
     display: block;
     font-size: 40px;
-    width: 100%;
     color: #FF5252;
-    margin-left: 10px;
+    padding-left: 20px;
     cursor: pointer;
   }
   #toggle-list ul {
@@ -617,6 +618,15 @@ td {
   }
   #toggle-list ul.open {
     height: auto;
+    transition-timing-function: ease-in-out;
+  }
+  #toggle-list ul li {
+    display: block;
+    border-top: 1px solid #f6f9fc;
+    width: 100%;
+  }
+  #footer-logo {
+    max-width: 60vw;
   }
 }
 @media only screen and (min-width:1150px) {
