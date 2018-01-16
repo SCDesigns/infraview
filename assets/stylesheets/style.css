@@ -41,6 +41,7 @@ body {
     background-origin: initial;
     background-clip: initial;
     min-height: 100%;
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -110,7 +111,6 @@ p {
 .left,
 .right {
     padding: 20px 0;
-    border: 1px solid #f6f9fc;
     border-image-source: initial;
     border-image-slice: initial;
     border-image-width: initial;
@@ -233,16 +233,16 @@ p {
   box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
 
-.toggle-list {
-  flex-direction: row;
-  justify-content: center;
-  margin: 0 auto;
+#toggle-list {
+  width: 100%;
+  border-bottom: 1px solid #f6f9fc;
+}
+
+#toggle-list ul li {
+  list-style: none;
 }
 
 .info-toggle {
-  border-color: none;
-  border-style: none;
-  border-bottom: 1px solid #f6f9fc;
   border-width: 1px;
   padding: 20px;
   color: #FF5252;
@@ -345,6 +345,12 @@ p {
     justify-content: space-between
 }
 
+button {
+    background: #fff;
+    border: none;
+    color: #FF5252
+}
+
 .button {
     display: inline-block;
     height: 40px;
@@ -359,7 +365,7 @@ p {
     color: #FF5252
 }
 
-.button:hover {
+button:hover, .button:hover {
     background: #FFCDD2;
     color: #D32F2F
 }
@@ -377,6 +383,7 @@ a {
 
 #copyright {
   text-align: center;
+  display: inline-flex;
 }
 
 #about-bullets {
@@ -451,7 +458,9 @@ td {
 .checkboxes {
   padding: 50px auto;
 }
-
+#footer-logo {
+  display: block;
+}
 @media only screen and (min-width:300px) {
     #landing {
         height: 600px
@@ -469,36 +478,27 @@ td {
     #intro {
         max-width: 250px
     }
-    #footer-logo {
-        max-width: 75vw;
-        padding-top: 50px;
-        margin: 0 auto
-    }
-    .left {
-        border: 1px solid #f6f9fc;
-        border-width: 1px 0
-    }
-    .right {
-        border-width: 0;
-        width: 100%
-    }
 }
 
 @media only screen and (max-width:695px) {
     .left,
     .right {
-        display: block
+        display: block;
     }
     .left {
-        border: 1px solid #f6f9fc;
-        border-width: 1px 0
+        border-bottom: 1px solid #f6f9fc;
     }
     .right {
-        border-width: 0
+        border: none;
+    }
+    #footer-logo {
+        max-width: 75vw;
+        padding-top: 50px;
+        margin: 0 auto
     }
     #copyright {
       margin-top: 50px;
-      font-size: 90%;
+      max-width: 392px;
     }
     #boiler_iframe {
       min-height: 500px;
@@ -508,8 +508,7 @@ td {
       min-height: 500px;
     }
 }
-
-@media only screen and (min-width:696px) {
+@media only screen and (min-width:695px) {
     .globalNav .rootLink {
         padding: 0 calc(10px + (100vw - 670px) * .040541)
     }
@@ -527,29 +526,31 @@ td {
         align-items: center;
         height: 600px
     }
+    .left, .right {
+      border: 1px solid #f6f9fc;
+    }
     .left {
-        -ms-flex: 1;
-        flex: 1;
-        padding-right: 20px;
-        border-width: 0 1px 0 0
+      -ms-flex: 1;
+      flex: 1;
+      padding-right: 20px;
+      border-width: 0 1px 0 0
     }
     .right {
-        -ms-flex: 1;
-        flex: 1;
-        padding-left: 20px;
-        border-width: 0 0 0 1px
+      -ms-flex: 1;
+      flex: 1;
+      padding-left: 20px;
+      border-width: 0 0 0 1px
     }
     .globalFooterNav .siteNav {
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap
     }
     .globalFooterNav .siteNav .column {
-        -ms-flex-preferred-size: auto!important;
-        flex-basis: auto!important
+      -ms-flex-preferred-size: auto!important;
+      flex-basis: auto!important
     }
     #footer-logo {
-        max-width: 50vw;
-        padding-top: 35px;
+      max-width: 50vw;
     }
     #copyright {
       margin-top: 110px;
@@ -558,21 +559,20 @@ td {
 
 @media only screen and (min-width:880px) {
     #landing {
-        height: 720px
+      height: 720px
     }
     #split {
-        width: 250px
+      width: 250px
     }
     #landing h1 {
-        font-size: 40px
+      font-size: 40px
     }
     .globalFooterNav .siteNav {
-        -ms-flex-positive: 0;
-        flex-grow: 0
+      -ms-flex-positive: 0;
+      flex-grow: 0
     }
     #footer-logo {
-        max-width: 45vw;
-        padding-top: 20px
+      max-width: 45vw;
     }
     #copyright {
       margin-top: 135px;
@@ -581,38 +581,55 @@ td {
 
 @media only screen and (min-width:1040px) {
     .globalNav .rootLink {
-        padding: 0 25px
+      padding: 0 25px
     }
     #split {
-        width: 300px
+      width: 300px
     }
     .left {
-        padding: 35px 70px 35px 0
+      padding: 35px 70px 35px 0
     }
     .right {
-        padding: 35px 0 35px 70px
+      padding: 35px 0 35px 70px
     }
     #footer-logo {
-        max-width: 40vw
+      max-width: 40vw
     }
     #copyright {
       margin-top: 105px;
     }
 }
-
 @media only screen and (max-width:1150px) {
-  .toggle-list {
-    display: none;
+  #toggle-list {
+    text-align: left;
   }
-  .mobile-toggle-list {
-    display: flex;
+  #hamburger {
+    display: block;
+    font-size: 40px;
+    width: 100%;
+    color: #FF5252;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  #toggle-list ul {
+    height: 0;
+    overflow: hidden;
+  }
+  #toggle-list ul.open {
+    height: auto;
   }
 }
 @media only screen and (min-width:1150px) {
-  .toggle-list {
+  #toggle-list ul {
+    display: block;
+    margin: 0 auto;
     display: flex;
   }
-  .mobile-toggle-list {
+  #toggle-list ul li {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  #hamburger {
     display: none;
   }
 }
