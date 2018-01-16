@@ -318,15 +318,15 @@ button {
     font-size: 15px
 }
 
-.link-row .common-BodyText {
+.common-BodyText {
     margin: 15px 0 18px
 }
 
 .globalFooterNav {
-    padding: 65px 0 55px;
-    color: #8898aa;
-    line-height: 30px;
-    border-top: 1px solid rgba(207, 215, 223, .25)
+  padding: 65px 0 55px;
+  color: #8898aa;
+  line-height: 30px;
+  border-top: 1px solid rgba(207, 215, 223, .25)
 }
 
 .globalFooterNav .siteNav {
@@ -337,7 +337,6 @@ button {
     -ms-flex-positive: 1;
     flex-grow: 1;
     -ms-flex-pack: justify;
-    justify-content: center;
 }
 
 .button {
@@ -457,9 +456,6 @@ td {
 .checkboxes {
   padding: 50px auto;
 }
-#footer-logo {
-  display: block;
-}
 
 #toggle-list ul li:hover, #toggle-list ul li:focus {
   background: #FFCDD2;
@@ -467,8 +463,12 @@ td {
 }
 
 .thermometer {
-  margin: 0 auto;
+  margin: 10px auto;
   display: block;
+}
+
+#footer-logo {
+  max-width: 100%;
 }
 
 @media only screen and (min-width:300px) {
@@ -497,15 +497,6 @@ td {
 }
 
 @media only screen and (max-width:695px) {
-    .left {
-        border-bottom: 1px solid #f6f9fc;
-    }
-    .right {
-        border: none;
-    }
-    #footer-logo {
-      padding-top: 50px;
-    }
     #copyright {
       margin-top: 50px;
       max-width: 392px;
@@ -524,10 +515,6 @@ td {
     }
 }
 @media only screen and (min-width:695px) {
-    .link-row .cols {
-      display: -ms-flexbox;
-      display: flex
-    }
     #intro {
       max-width: 300px
     }
@@ -537,6 +524,13 @@ td {
       -ms-flex-align: center;
       align-items: center;
       height: 85vh;
+    }
+    .link-row .cols {
+      display: -ms-flexbox;
+      display: flex
+    }
+    .column {
+      width: 50%;
     }
     .left, .right {
       border: 1px solid #f6f9fc;
@@ -594,9 +588,6 @@ td {
     .right {
       padding: 35px 0 35px 70px;
     }
-    #footer-logo {
-      max-width: 75vw
-    }
     #copyright {
       margin-top: 75px;
     }
@@ -624,9 +615,6 @@ td {
     display: block;
     border-top: 1px solid #f6f9fc;
     width: 100%;
-  }
-  #footer-logo {
-    max-width: 60vw;
   }
 }
 @media only screen and (min-width:1150px) {
