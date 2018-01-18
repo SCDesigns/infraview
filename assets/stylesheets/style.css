@@ -414,6 +414,7 @@ a {
 .alpha {
   font-weight: bold;
   font-size: 22.5px;
+  margin: 10px 0;
 }
 
 .input-text {
