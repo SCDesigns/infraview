@@ -34,7 +34,7 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
-  </head>
+	</head>
 	<body>
     <header>
       <ul class="mini-menu">
@@ -56,56 +56,53 @@
         </li>
       </ul>
     </header>
-		<!-- <nav id="toggle-list">
-			<a id="hamburger">&#9776;</a>
-			<ul>
-				<li class="info-toggle" onclick="load('./portable-boiler-thermometer/_about.html', './portable-boiler-thermometer/images/_default.html')">About</li>
-				<li class="info-toggle" onclick="load('./portable-boiler-thermometer/_apps-and-installations.html', './portable-boiler-thermometer/images/_apps-and-installations.html')">Apps & Installations</li>
-				<li class="info-toggle" onclick="load('./portable-boiler-thermometer/_manuals.html')">Manuals</li>
-				<li class="info-toggle" onclick="load('./portable-boiler-thermometer/_contact.html')">Contact</li>
-				<li class="info-toggle" onclick="load('./portable-boiler-thermometer/_sensor-calibration.html')">Sensor Calibration</li>
-			</ul>
-		</nav> -->
+		<nav id="toggle-list">
+				<a id="hamburger">&#9776;</a>
+				<ul>
+					<li class="info-toggle" onclick="load('./boiler-thermometer/about.html', './boiler-thermometer/images/_default.html')">About</li>
+					<li class="info-toggle" onclick="load('./boiler-thermometer/principles-of-operation.html', './boiler-thermometer/images/_default.html')">Principles of Operation</li>
+					<li class="info-toggle" onclick="load('./boiler-thermometer/apps-and-installations.html', './boiler-thermometer/images/_apps-and-installations.html')">Apps & Installations</li>
+					<li class="info-toggle" onclick="load('./boiler-thermometer/specs.html', './boiler-thermometer/images/_default.html')">Specs</li>
+					<li class="info-toggle" onclick="load('./boiler-thermometer/natural-gas.html', './boiler-thermometer/images/_natural-gas.html')">Natural Gas</li>
+					<li class="info-toggle" onclick="load('./boiler-thermometer/technical-paper.html')">Tech Paper</li>
+					<li class="info-toggle" onclick="load('./boiler-thermometer/manuals.html')">Manuals</li>
+					<li class="info-toggle" onclick="load('./boiler-thermometer/contact.html')">Contact</li>
+					<li class="info-toggle" onclick="load('./boiler-thermometer/sensor-calibration.html')">Sensor Calibration</li>
+				</ul>
+			</nav>
 		<section id="boiler page-content">
 	    <div class="link-row">
 	      <div class="cols container-lg product-page">
 	        <div class="left" id="content">
-            <iframe id="boiler_iframe" src="./portable-boiler-thermometer/_about.html">
-            </iframe>
 	        </div>
 
 	        <div class="right" id="images">
-            <h2 class="common-Uppercase center">
-	            Infra-View&reg; Compact Portable Infrared Boiler Thermometer
+	          <h2 class="common-Uppercase center">
+	            Infra-View&reg; Boiler Thermometer
 	          </h2>
-						<iframe id="boiler_iframe_images" src="./portable-boiler-thermometer/images/_default.html">
+						<iframe id="boiler_iframe_images" src="./boiler-thermometer/images/_default.html">
             </iframe>
 	        </div>
 	      </div>
     	</div>
     </section>
 
-		<section id="footer">
-			<article class="globalFooterNav">
-				<div class="container-lg">
-					<div class="siteNav">
-						<div class="column">
-							<h4>Contact</h4>
-								<ul>
-									<li><a href="tel:+2016412130" class="button phone"><strong>(201) 641-2130</strong></a></li>
-									<li><a href="mailto:contact@jnt-tech-serv.com" class="button mail"><strong>contact@jnt-tech-serv.com</strong></a></li>
-									<li><a href="/contact" class="button form"><strong>Contact Form</strong></a></li>
-								</ul>
-						</div>
-						<div class="column">
-							<ul id="logo-copy">
-								<li><img alt="jnt" id="footer-logo" src="./assets/img/jnt.svg" /></li>
-								<li id="copyright">&copy; 2018 JNT Technical Services Inc. by <a href="http://www.seanclarkedesigns.com"> Sean Clarke Designs</a><li/>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</article>
-		</section>
+		<?php include "./partials/footer.html" ?>
 	</body>
+
+	<!-- <script>
+	  function load(page, images) {
+			document.getElementById("boiler_iframe").src = page;
+			if (images){
+				document.getElementById("images").style.display = "block";
+				document.getElementById("boiler_iframe_images").src = images;
+			} else {
+				document.getElementById("images").style.display = "none";
+				document.getElementById("content").style.borderRight = "none";
+			}
+	  };
+	</script> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="./assets/js/menu.js"></script>
+
 </html>

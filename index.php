@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="home"  >
+<html lang="en" id="home" >
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,7 +56,7 @@
     <section id="landing">
       <div class="container-lg">
         <h1>
-          <!-- <img alt="jnt" id="intro-logo" src="./assets/img/jnt-nav.svg">--> Infra-View
+          Infra-View
         </h1>
 				<div id="split"></div>
         <p id="intro">
@@ -75,8 +75,8 @@
 	          <!-- <p class="common-BodyText">
 	            Measure FEGT from 250°F - 3,000°F
 	          </p> -->
-						<img class="thermometer" src="./assets/img/landing/boiler-thermometer.jpg"/>
-	          <a class="button common-Link--arrow" href="boiler-thermometer.html">
+						<a href="boiler-thermometer.html"><img class="thermometer" src="./assets/img/landing/boiler-thermometer.jpg"/></a>
+	          <a class="button common-Link--arrow" href="boiler-thermometer.php">
 	            Learn More
 	          </a>
 	        </div>
@@ -88,8 +88,8 @@
 	          <!-- <p class="common-BodyText">
 							Measure Iso-Phase Bus Temperatures.
 	          </p> -->
-						<img class="thermometer" src="./assets/img/landing/generator-thermometer.jpg"/>
-	          <a class="button common-Link--arrow" href="generator-bus-bar-thermometer.html">
+					 <a href="generator-bus-bar-thermometer.html"><img class="thermometer" src="./assets/img/landing/generator-thermometer.jpg"/></a>
+	          <a class="button common-Link--arrow" href="generator-bus-bar-thermometer.php">
 	            Learn More
 	          </a>
 	        </div>
@@ -105,8 +105,8 @@
 	          <!-- <p class="common-BodyText">
 							Portable Data Logging of FEGT
 	          </p> -->
-						<img class="thermometer" src="./assets/img/landing/portable-boiler-thermometer.jpg"/>
-	          <a class="button common-Link--arrow" href="portable-boiler-thermometer.html" >
+						<a href="portable-boiler-thermometer.html" ><img class="thermometer" src="./assets/img/landing/portable-boiler-thermometer.jpg"/></a>
+	          <a class="button common-Link--arrow" href="portable-boiler-thermometer.php" >
 	            Learn More
 	          </a>
 	        </div>
@@ -118,8 +118,8 @@
 	          <!-- <p class="common-BodyText">
 							Measure Iso-Phase Bus Temperatures.
 	          </p> -->
-						<img class="thermometer" src="./assets/img/landing/natgas-thermometer.jpg"/>
-	          <a class="button common-Link--arrow" href="boiler-thermometer.html" >
+						<a  href="boiler-thermometer.html" ><img class="thermometer" src="./assets/img/landing/natgas-thermometer.jpg"/></a>
+	          <a class="button common-Link--arrow" href="boiler-thermometer.php" >
 	            Learn More
 	          </a>
 	        </div>
@@ -127,27 +127,6 @@
     	</div>
     </section>
 
-		<section id="footer">
-	    <article class="globalFooterNav">
-	      <div class="container-lg">
-		      <div class="siteNav">
-		        <div class="column">
-		          <h4>Contact</h4>
-		            <ul>
-		              <li><a href="tel:+2016412130" class="button phone"><strong>(201) 641-2130</strong></a></li>
-		              <li><a href="mailto:contact@jnt-tech-serv.com" class="button mail"><strong>contact@jnt-tech-serv.com</strong></a></li>
-		              <li><a href="/contact" class="button form"><strong>Contact Form</strong></a></li>
-		            </ul>
-		        </div>
-		        <div class="column">
-							<ul id="logo-copy">
-		          	<li><img alt="jnt" id="footer-logo" src="./assets/img/jnt.svg" /></li>
-								<li id="copyright">&copy; 2018 JNT Technical Services Inc. by <a href="http://www.seanclarkedesigns.com"> Sean Clarke Designs</a><li/>
-							</ul>
-						</div>
-		      </div>
-				</div>
-	    </article>
-		</section>
+		<?php include "./partials/footer.html" ?>
 	</body>
 </html>

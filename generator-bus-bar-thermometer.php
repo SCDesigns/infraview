@@ -85,28 +85,7 @@
     	</div>
     </section>
 
-		<section id="footer">
-			<article class="globalFooterNav">
-				<div class="container-lg">
-					<div class="siteNav">
-						<div class="column">
-							<h4>Contact</h4>
-								<ul>
-									<li><a href="tel:+2016412130" class="button phone"><strong>(201) 641-2130</strong></a></li>
-									<li><a href="mailto:contact@jnt-tech-serv.com" class="button mail"><strong>contact@jnt-tech-serv.com</strong></a></li>
-									<li><a href="/contact" class="button form"><strong>Contact Form</strong></a></li>
-								</ul>
-						</div>
-						<div class="column">
-							<ul id="logo-copy">
-								<li><img alt="jnt" id="footer-logo" src="./assets/img/jnt.svg" /></li>
-								<li id="copyright">&copy; 2018 JNT Technical Services Inc. by <a href="http://www.seanclarkedesigns.com"> Sean Clarke Designs</a><li/>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</article>
-		</section>
+		<?php include "./partials/footer.html" ?>
 	</body>
 
 	<script>
