@@ -218,7 +218,7 @@
           <tr>
   					<td valign="top">
   						<div align="right">
-  							<label for="comments">Comments</label>
+  							<label for="comments">Comments:</label>
   						</div>
   					</td>
   					<td valign="top">

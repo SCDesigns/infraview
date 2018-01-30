@@ -27,7 +27,7 @@
   				<tr>
   					<td valign="center" width="45%">
   						<div align="right">
-  							<label for="first_name">First Name:</label>
+  							<label for="first_name">First Name:*</label>
               </div>
   					</td>
   					<td valign="center">
@@ -39,7 +39,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="last_name">Last Name:</label>
+  							<label for="last_name">Last Name:*</label>
               </div>
   					</td>
   					<td valign="center">
@@ -51,7 +51,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="email">Email Address:</label>
+  							<label for="email">Email Address:*</label>
               </div>
   					</td>
   					<td valign="center">
@@ -63,7 +63,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="telephone">Phone Number:</label>
+  							<label for="telephone">Phone Number:*</label>
               </div>
   					</td>
   					<td valign="center">
@@ -75,7 +75,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="company">Company:</label>
+  							<label for="company">Company:*</label>
               </div>
   					</td>
   					<td valign="center">
@@ -99,7 +99,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="address">Street Address:</label>
+  							<label for="address">Street Address:*</label>
   						</div>
   					</td>
   					<td valign="center">
@@ -111,7 +111,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="city">City:</label>
+  							<label for="city">City:*</label>
   						</div>
   					</td>
   					<td valign="center">
@@ -123,7 +123,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="state">State:</label>
+  							<label for="state">State:*</label>
   						</div>
   					</td>
   					<td valign="center">
@@ -135,7 +135,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="zip">Zip:</label>
+  							<label for="zip">Zip:*</label>
   						</div>
   					</td>
   					<td valign="center">
@@ -147,7 +147,7 @@
           <tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="zip">Quantity:</label>
+  							<label for="zip">Quantity:*</label>
   						</div>
   					</td>
   					<td valign="center">
@@ -184,7 +184,7 @@
   				<tr>
   					<td valign="top">
   						<div align="right">
-  							<label for="comments">Comments</label>
+  							<label for="comments">Comments:</label>
   						</div>
   					</td>
   					<td valign="top">

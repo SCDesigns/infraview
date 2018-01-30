@@ -983,7 +983,6 @@ legend {
   border-bottom: 1px solid #e5e5e5;
 }
 label {
-  display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold;
@@ -995,7 +994,7 @@ input[type="search"] {
 }
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
+  margin: 5px;
   margin-top: 1px \9;
   line-height: normal;
 }

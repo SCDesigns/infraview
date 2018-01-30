@@ -7,7 +7,6 @@ p {
 
 .globalNav,
 body {
-    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
@@ -57,6 +56,7 @@ body {
 * {
     box-sizing: border-box;
     list-style: none;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
 }
 
 body,
@@ -149,6 +149,7 @@ button {
 #mini-menu-title {
   color: #D32F2F;
   margin-left: 15px;
+  font-size: 3.5em !important;
 }
 
 .globalNav .navSection.logo {
@@ -405,7 +406,8 @@ a {
 
 .input-text {
   height: 40px;
-  padding: 10px 12px;
+  padding: 10px;
+  margin:  5px  10px;
   border-radius: 4px;
   border: 2px solid #f5f7f9;
   box-shadow: 0 1px 3px 0 #e6ebf1;
@@ -417,7 +419,8 @@ a {
   background-color: white;
   height: 80px;
   max-width: 325px;
-  padding: 10px 12px;
+  padding: 10px;
+  margin:  5px  10px;
   border-radius: 4px;
   border: 2px solid #f5f7f9;
   box-shadow: 0 1px 3px 0 #e6ebf1;
