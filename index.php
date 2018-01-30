@@ -75,8 +75,8 @@
 	          <!-- <p class="common-BodyText">
 	            Measure FEGT from 250°F - 3,000°F
 	          </p> -->
-						<a href="boiler-thermometer.html"><img class="thermometer" src="./assets/img/landing/boiler-thermometer.jpg"/></a>
-	          <a class="button common-Link--arrow" href="boiler-thermometer.php">
+						<a href="./boiler-thermometer/about.php"><img class="thermometer" src="./assets/img/landing/boiler-thermometer.jpg"/></a>
+	          <a class="button common-Link--arrow" href="./boiler-thermometer/about.php">
 	            Learn More
 	          </a>
 	        </div>
@@ -88,8 +88,8 @@
 	          <!-- <p class="common-BodyText">
 							Measure Iso-Phase Bus Temperatures.
 	          </p> -->
-					 <a href="generator-bus-bar-thermometer.html"><img class="thermometer" src="./assets/img/landing/generator-thermometer.jpg"/></a>
-	          <a class="button common-Link--arrow" href="generator-bus-bar-thermometer.php">
+					 <a href="./generator-bus-bar-thermometer/about.php"><img class="thermometer" src="./assets/img/landing/generator-thermometer.jpg"/></a>
+	          <a class="button common-Link--arrow" href="./generator-bus-bar-thermometer/about.php">
 	            Learn More
 	          </a>
 	        </div>
@@ -102,11 +102,12 @@
 	          <h2 class="common-Uppercase">
 	            Infra-View&reg; Portable Boiler Thermometer
 	          </h2>
-	          <!-- <p class="common-BodyText">
+						<!--
+	          <p class="common-BodyText">
 							Portable Data Logging of FEGT
 	          </p> -->
-						<a href="portable-boiler-thermometer.html" ><img class="thermometer" src="./assets/img/landing/portable-boiler-thermometer.jpg"/></a>
-	          <a class="button common-Link--arrow" href="portable-boiler-thermometer.php" >
+						<a href="./portable-boiler-thermometer/about.php"><img class="thermometer" src="./assets/img/landing/portable-boiler-thermometer.jpg"/></a>
+	          <a class="button common-Link--arrow" href="./portable-boiler-thermometer/about.php" >
 	            Learn More
 	          </a>
 	        </div>
@@ -118,8 +119,8 @@
 	          <!-- <p class="common-BodyText">
 							Measure Iso-Phase Bus Temperatures.
 	          </p> -->
-						<a  href="boiler-thermometer.html" ><img class="thermometer" src="./assets/img/landing/natgas-thermometer.jpg"/></a>
-	          <a class="button common-Link--arrow" href="boiler-thermometer.php" >
+						<a  href="./boiler-thermometer/about.php"><img class="thermometer" src="./assets/img/landing/natgas-thermometer.jpg"/></a>
+	          <a class="button common-Link--arrow" href="./boiler-thermometer/natural-gas.php">
 	            Learn More
 	          </a>
 	        </div>

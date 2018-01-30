@@ -1,5 +1,5 @@
 <head>
-  <link rel="stylesheet" href="../assets/stylesheets/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
   <h2 class="common-Uppercase">

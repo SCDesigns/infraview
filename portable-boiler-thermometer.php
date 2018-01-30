@@ -11,7 +11,7 @@
 
 		<meta name="keywords" content="boiler, power, generator, nuclear, Little Ferry, pipe plug, energy, JNT, industry, performance, manufacturer, technical, plug, tube plug, exit gas, furnace, high pressure, feed water, acoustic, leak, detector, sound, RADS">
 
-		<link rel="stylesheet" href="./assets/stylesheets/style.css">
+		<link rel="stylesheet" href="./assets/css/style.css">
 
     <meta property="og:title" content="JNT Technical Services">
     <meta property="og:url" content="http://www.infra-view.com/">
@@ -84,7 +84,7 @@
 	      </div>
     	</div>
     </section>
-		
+
 		<?php include "./partials/footer.html" ?>
 	</body>
 </html>

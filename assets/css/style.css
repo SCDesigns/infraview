@@ -56,7 +56,7 @@ body {
 
 * {
     box-sizing: border-box;
-    transform-origin: 0 0 0
+    list-style: none;
 }
 
 body,
@@ -106,11 +106,6 @@ button {
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
-}
-
-.product-page {
-  min-height: 1250px;
-  height: 100%;
 }
 
 .left,
@@ -243,13 +238,11 @@ button {
   list-style: none !important;
   border-width: 1px;
   padding: 20px;
-  color: #FF5252;
   font-size: 14px;
-  font-weight: bold;
   cursor: pointer;
 }
 
-.info-toggle:hover {
+.info-toggle a:hover {
   color: #D32F2F;
 }
 
@@ -526,7 +519,8 @@ td {
     }
     .link-row .cols {
       display: -ms-flexbox;
-      display: flex
+      display: flex;
+      justify-content: center;
     }
     .column {
       width: 50%;
@@ -622,9 +616,13 @@ td {
     margin: 0 auto;
     display: flex;
   }
-  #toggle-list ul li {
+  #toggle-list ul a {
     display: inline-block;
     margin: 0 auto;
+    font-weight: bold;
+    color: #FF5252;
+    font-weight: bold;
+}
   }
   #hamburger {
     display: none;

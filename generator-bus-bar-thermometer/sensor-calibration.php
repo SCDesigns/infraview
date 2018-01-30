@@ -1,5 +1,5 @@
 <head>
-  <link rel="stylesheet" href="../assets/stylesheets/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <form name="contactform" method="post" action="">
 	<p>
