@@ -258,13 +258,15 @@
   						</div>
   					</td>
   				</tr>
-  				<tr>
-  					<td colspan = "2" style = "text-align:center">
-  						<div align="center">
-  							<div class="g-recaptcha" data-sitekey="6Len0S4UAAAAAH6WechX_xbc99crzJ18Fx16ssWo"></div>
-  							<label for="g-recaptcha">Please complete reCaptcha</label>												</div>
-  					</td>
-  				</tr>
+          <tr>
+            <td valign="center" colspan = "2" class="center">
+                  <br/>
+                  <label for="g-recaptcha">Please complete reCaptcha</label>
+                    <br/>  <br/>
+                  <div align="center" class="g-recaptcha" data-sitekey="6Len0S4UAAAAAH6WechX_xbc99crzJ18Fx16ssWo"></div>
+                  <br/>
+            </td>
+          </tr>
   				<tr>
   					<td colspan="2">
   						<br/>

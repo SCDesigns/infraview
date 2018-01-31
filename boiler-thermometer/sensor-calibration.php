@@ -225,7 +225,7 @@
   						</div>
   					</td>
   				</tr>
-  				<tr style="margin: 0 auto;">
+  				<tr>
   					<td valign="center" colspan = "2" class="center">
                   <br/>
     							<label for="g-recaptcha">Please complete reCaptcha</label>
