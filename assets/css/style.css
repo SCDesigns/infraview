@@ -340,6 +340,22 @@ input:focus, textarea:focus {
   text-align: center;
 }
 
+.brand .logo {
+  position: absolute;
+  top: 10;
+  left: 0;
+  list-style: none;
+}
+.brand .logo .brand-link {
+  padding-top: 25px!important;
+  padding-left: 25px!important;
+  display: inline-block;
+}
+.brand {
+    z-index: 500;
+}
+
+
 @media only screen and (min-width:300px) {
     #landing {
         height: 75vh;
