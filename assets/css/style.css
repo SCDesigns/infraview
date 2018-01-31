@@ -44,7 +44,6 @@ body {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    font-size: 70%;
     font-weight: 400;
     font-style: normal;
     -webkit-text-size-adjust: 100%;
@@ -76,7 +75,7 @@ section {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 3.5em;
     -webkit-margin-before: .83em;
     -webkit-margin-after: .83em;
     font-weight: 700
@@ -149,7 +148,6 @@ button {
 #mini-menu-title {
   color: #D32F2F;
   margin-left: 15px;
-  font-size: 3.5em !important;
 }
 
 .globalNav .navSection.logo {
@@ -231,7 +229,6 @@ button {
 }
 
 #toggle-list {
-  width: 100%;
   border-bottom: 1px solid #f6f9fc;
 }
 
@@ -448,6 +445,12 @@ td {
   padding: 50px auto;
 }
 
+#toggle-list ul a {
+  font-weight: bold;
+  color: #FF5252;
+  font-size: 1em;
+}
+
 #toggle-list ul li:hover, #toggle-list ul li:focus {
   background: #FFCDD2;
   color: #D32F2F
@@ -587,47 +590,4 @@ td {
     #copyright {
       margin-top: 75px;
     }
-}
-@media only screen and (max-width:1150px) {
-  #toggle-list {
-    text-align: left;
-  }
-  #hamburger {
-    display: block;
-    font-size: 40px;
-    color: #FF5252;
-    padding-left: 20px;
-    cursor: pointer;
-  }
-  #toggle-list ul {
-    height: 0;
-    overflow: hidden;
-  }
-  #toggle-list ul.open {
-    height: auto;
-    transition-timing-function: ease-in-out;
-  }
-  #toggle-list ul li {
-    display: block;
-    border-top: 1px solid #f6f9fc;
-    width: 100%;
-  }
-}
-@media only screen and (min-width:1150px) {
-  #toggle-list ul {
-    display: block;
-    margin: 0 auto;
-    display: flex;
-  }
-  #toggle-list ul a {
-    display: inline-block;
-    margin: 0 auto;
-    font-weight: bold;
-    color: #FF5252;
-    font-weight: bold;
-}
-  }
-  #hamburger {
-    display: none;
-  }
 }

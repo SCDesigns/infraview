@@ -1,6 +1,9 @@
 <head>
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+  <script src="../../assets/js/bootstrap.js"></script>
+  <script src="../../assets/js/navbar-active.js"></script>
 </head>
 <header>
   <ul class="mini-menu">
@@ -22,17 +25,39 @@
     </li>
   </ul>
 </header>
-<nav id="toggle-list">
-    <a id="hamburger">&#9776;</a>
-    <ul>
-      <a href="../boiler-thermometer/about.php"><li class="info-toggle">About</li></a>
-      <a href="../boiler-thermometer/principles-of-operation.php"><li class="info-toggle">Principles of Operation</li></a>
-      <a href="../boiler-thermometer/apps-and-installations.php"><li class="info-toggle">Apps & Installations</li></a>
-      <a href="../boiler-thermometer/specs.php"><li class="info-toggle">Specs</li></a>
-      <a href="../boiler-thermometer/natural-gas.php"><li class="info-toggle">Natural Gas</li></a>
-      <a href="../boiler-thermometer/technical-paper.php"><li class="info-toggle">Tech Paper</li></a>
-      <a href="../boiler-thermometer/manuals.php"><li class="info-toggle">Manuals</li></a>
-      <a href="../boiler-thermometer/contact.php"><li class="info-toggle">Contact</li></a>
-      <a href="../boiler-thermometer/sensor-calibration.php"><li class="info-toggle">Sensor Calibration</li></a>
-    </ul>
-  </nav>
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggle-list" aria-expanded="false">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="toggle-list">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../boiler-thermometer/about.php">About</a></li>
+        <li><a href="../boiler-thermometer/principles-of-operation.php">Principles of Operation</a></li>
+        <li><a href="../boiler-thermometer/apps-and-installations.php">Apps & Installations</a></li>
+        <li><a href="../boiler-thermometer/specs.php">Specs</a></li>
+        <li><a href="../boiler-thermometer/natural-gas.php">Natural Gas</a></li>
+        <li><a href="../boiler-thermometer/technical-paper.php">Tech Paper</a></li>
+        <li><a href="../boiler-thermometer/manuals.php">Manuals</a></li>
+        <li><a href="../boiler-thermometer/contact.php">Contact</a></li>
+        <li><a href="../boiler-thermometer/sensor-calibration.php">Sensor Calibration</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Products<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../../generator-bus-bar-thermometer/about.php">Generator Bus Bar Thermometer</a></li>
+            <li><a href="../../portable-boiler-thermometer/about.php" >Portable Boiler Thermometer</a></li>
+            <li><a href="../../boiler-thermometer/natural-gas.php">Boiler Thermometer</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
