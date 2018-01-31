@@ -131,7 +131,7 @@ button {
 }
 
 #landing {
-  background: url(../img/banner.jpg) center no-repeat;
+  background: url(../img/banner.jpg) no-repeat bottom center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
