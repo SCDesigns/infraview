@@ -34,7 +34,7 @@
 </head>
   <?php include "./nav/header-nav.html" ?>
 <body>
-  <form name="contactform" method="post" action="">
+    <form name="contactform" method="post" action="../send_contact_email.php">
   	<p>
   		<center>
   			<br/>

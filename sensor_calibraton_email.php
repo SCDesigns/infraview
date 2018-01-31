@@ -2,11 +2,11 @@
 if(isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "you@yourdomain.com";
-    $email_subject = "Your email subject line";
+    $email_to = "sales@jnt-tech-serv.com";
+    $email_subject = "Interested in Your Services";
 
     function died($error) {
-        // your error code can go here
+        // error code
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
         echo "These errors appear below.<br /><br />";
         echo $error."<br /><br />";
@@ -20,17 +20,29 @@ if(isset($_POST['email'])) {
         !isset($_POST['last_name']) ||
         !isset($_POST['email']) ||
         !isset($_POST['telephone']) ||
-        !isset($_POST['comments'])) {
+        !isset($_POST['company'])) ||
+        !isset($_POST['address']) ||
+        !isset($_POST['city']) ||
+        !isset($_POST['state']) ||
+        !isset($_POST['zip']) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
-
-
 
     $first_name = $_POST['first_name']; // required
     $last_name = $_POST['last_name']; // required
     $email_from = $_POST['email']; // required
-    $telephone = $_POST['telephone']; // not required
-    $comments = $_POST['comments']; // required
+    $telephone = $_POST['telephone']; // required
+    $company = $_POST['company']; // required
+    $title = $_POST['title']; // required
+    $address = $_POST['address']; // required
+    $city = $_POST['city']; // required
+    $state = $_POST['state']; // required
+    $zip = $_POST['zip']; // required
+    $quantity = $_POST['quantity']; // not required
+    $serial_numbers = $_POST['serial_numbers']; // not required
+    $po_number = $_POST['po_number']; // not required
+    $comments = $_POST['comments']; // not required
+
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -49,6 +61,10 @@ if(isset($_POST['email'])) {
     $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
   }
 
+  if(!preg_match($string_exp,$comp)) {
+    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+  }
+
   if(strlen($comments) < 2) {
     $error_message .= 'The Comments you entered do not appear to be valid.<br />';
   }
@@ -59,18 +75,24 @@ if(isset($_POST['email'])) {
 
     $email_message = "Form details below.\n\n";
 
-
     function clean_string($string) {
       $bad = array("content-type","bcc:","to:","cc:","href");
       return str_replace($bad,"",$string);
     }
 
-
-
     $email_message .= "First Name: ".clean_string($first_name)."\n";
     $email_message .= "Last Name: ".clean_string($last_name)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
+    $email_message .= "Company: ".clean_string($company)."\n";
+    $email_message .= "Title: ".clean_string($title)."\n";
+    $email_message .= "Address: ".clean_string($address)."\n";
+    $email_message .= "City: ".clean_string($city)."\n";
+    $email_message .= "State: ".clean_string($state)."\n";
+    $email_message .= "Zip: ".clean_string($zip)."\n";
+    $email_message .= "Quantity: ".clean_string($quantity)."\n";
+    $email_message .= "Serial Numbers: ".clean_string($serial_numbers )."\n";
+    $email_message .= "PO Number: ".clean_string($po_number)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
 
 // create email headers
@@ -80,7 +102,7 @@ $headers = 'From: '.$email_from."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
-<!-- include your own success html here -->
+<!--  email success response  -->
 
 Thank you for contacting us. We will be in touch with you very soon.
 

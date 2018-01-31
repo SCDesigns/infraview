@@ -34,7 +34,7 @@
 </head>
   <?php include "./nav/header-nav.html" ?>
 <body>
-  <form name="contactform" method="post" action="mailto:xseanclarke@gmail.com" enctype="text/plain">
+  <form name="contactform" method="post" action="../send_contact_email.php">
   	<p>
   		<center>
   			<br/>
@@ -192,9 +192,9 @@
   					</td>
             <td>
               <div align="left">
-                <input name="contact-send-lit" type="checkbox" value="Send additional literature and technical information"><label for="contact-send-lit">Send additional literature and technical information</label>
+                <input name="contact_send_lit" type="checkbox" value="Send additional literature and technical information."><label for="contact-send-lit">Send additional literature and technical information</label>
                 <br>
-                <input name="contact-call-me" type="checkbox" value="Have an engineer call to arrange an onsite demonstration"><label for="contact-call-me">Have an engineer call to arrange an onsite demonstration</label>
+                <input name="contact_call_me" type="checkbox" value="Have an engineer call to arrange an onsite demonstration."><label for="contact-call-me">Have an engineer call to arrange an onsite demonstration</label>
                 <br>
               </div>
             </td>
@@ -219,27 +219,27 @@
             </td>
             <td valign="center">
               <div align="left">
-                <input type="text" class="input-text"name="facility-details" maxlength="30" size="30" value="" placeholder="">
+                <input type="text" class="input-text"name="facility_details" maxlength="30" size="30" value="" placeholder="">
               </div>
             </td>
           </tr>
           <tr>
             <td valign="center">
               <div align="right">
-                <label for="facility-details">Intended Use:</label>
+                <label for="intended_use">Intended Use:</label>
               </div>
             </td>
             <td valign="center">
               <div align="left">
-                <input name="use-start" type="checkbox" value="Start Up (FEGT)"><label for="use-start">Start Up (FEGT)</label>
+                <input name="use_start" type="checkbox" value="Start Up (FEGT)"><label for="use-start">Start Up (FEGT)</label>
                 <br>
-                <input name="use-nox" type="checkbox" value="FEGT for NOx Control"><label for="use-nox">FEGT for NOx Control</label>
+                <input name="use_nox" type="checkbox" value="FEGT for NOx Control"><label for="use-nox">FEGT for NOx Control</label>
                 <br>
-                <input name="use-soot" type="checkbox" value="Soot Blowing"><label for="use-soot">Soot Blowing</label>
+                <input name="use_soot" type="checkbox" value="Soot Blowing"><label for="use-soot">Soot Blowing</label>
                 <br>
-                <input name="use-urea" type="checkbox" value="Urea Injection"><label for="use-urea">Urea Injection</label>
+                <input name="use_urea" type="checkbox" value="Urea Injection"><label for="use-urea">Urea Injection</label>
                 <br>
-                <input name="use-slag" type="checkbox" value="Ash Fusion Temp / Slag Control"><label for="use-slag">Ash Fusion Temp. &amp; Slag Control</label>
+                <input name="use_slag" type="checkbox" value="Ash Fusion Temp / Slag Control"><label for="use-slag">Ash Fusion Temp. &amp; Slag Control</label>
                 <br>
                 <br>
                 <label for="use-other">Other: </label><input type="text" name="use-other" maxlength="30" size="30" value="" placeholder="">

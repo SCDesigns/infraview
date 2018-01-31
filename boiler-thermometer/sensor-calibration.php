@@ -2,13 +2,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Boiler Thermometer | Sensor Calibration</title>
+  <title>Generator Bus Bar Thermometer | Sensor Calibration</title>
 
   <meta name="description" content="Infra-View® Infrared Boiler Thermometer is a patented, remote sensing infrared detector, supplied with a rugged protective-cooling jacket that can be permanently flange mounted on any port, door or penetration into the boiler or furnace.">
 
   <meta name="keywords" content="boiler, power, generator, nuclear, Little Ferry, pipe plug, energy, JNT, industry, performance, manufacturer, technical, plug, tube plug, exit gas, furnace, high pressure, feed water, acoustic, leak, detector, sound, RADS">
 
   <link rel="stylesheet" href="./assets/css/style.css">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <meta property="og:title" content="JNT Technical Services">
   <meta property="og:url" content="http://www.infra-view.com/">
@@ -32,9 +33,9 @@
   <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 </head>
-  <?php include "./nav/header-nav.html" ?>
+<?php include "./nav/header-nav.html" ?>
 <body>
-  <form name="contactform" method="post" action="">
+  <form name="sensorcalibration" method="post" action="../sensor_calibraton_email.php">
   	<p>
   		<center>
   			<br/>
@@ -58,7 +59,7 @@
   				<tr>
   					<td valign="center" width="45%">
   						<div align="right">
-  							<label for="first_name">First Name:*</label>
+  							<label for="first_name">First Name:</label>
               </div>
   					</td>
   					<td valign="center">
@@ -70,7 +71,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="last_name">Last Name:*</label>
+  							<label for="last_name">Last Name:</label>
               </div>
   					</td>
   					<td valign="center">
@@ -82,7 +83,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="email">Email Address:*</label>
+  							<label for="email">Email Address:</label>
               </div>
   					</td>
   					<td valign="center">
@@ -94,7 +95,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="telephone">Phone Number:*</label>
+  							<label for="telephone">Phone Number:</label>
               </div>
   					</td>
   					<td valign="center">
@@ -106,7 +107,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="company">Company:*</label>
+  							<label for="company">Company:</label>
               </div>
   					</td>
   					<td valign="center">
@@ -130,7 +131,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="address">Street Address:*</label>
+  							<label for="address">Street Address:</label>
   						</div>
   					</td>
   					<td valign="center">
@@ -142,7 +143,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="city">City:*</label>
+  							<label for="city">City:</label>
   						</div>
   					</td>
   					<td valign="center">
@@ -154,7 +155,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="state">State:*</label>
+  							<label for="state">State:</label>
   						</div>
   					</td>
   					<td valign="center">
@@ -166,7 +167,7 @@
   				<tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="zip">Zip:*</label>
+  							<label for="zip">Zip:</label>
   						</div>
   					</td>
   					<td valign="center">
@@ -178,12 +179,12 @@
           <tr>
   					<td valign="center">
   						<div align="right">
-  							<label for="zip">Quantity:*</label>
+  							<label for="zip">Quantity:</label>
   						</div>
   					</td>
   					<td valign="center">
   						<div align="left">
-  							<input type="text" class="input-text"name="zip" maxlength="30" size="30" value="" placeholder="">
+  							<input type="text" class="input-text"name="quantity" maxlength="30" size="30" value="" placeholder="">
                 <label for="zip">x $495 ea.</label>
   						</div>
   					</td>
@@ -196,7 +197,7 @@
   					</td>
   					<td valign="center">
   						<div align="left">
-  							<input type="text" class="input-text"name="zip" maxlength="30" size="30" value="" placeholder="">
+  							<input type="text" class="input-text"name="serial_numbers" maxlength="30" size="30" value="" placeholder="">
   						</div>
   					</td>
   				</tr>
@@ -208,14 +209,14 @@
   					</td>
   					<td valign="center">
   						<div align="left">
-  							<input type="text" class="input-text"name="zip" maxlength="30" size="30" value="" placeholder="">
+  							<input type="text" class="input-text"name="po_number" maxlength="30" size="30" value="" placeholder="">
   						</div>
   					</td>
   				</tr>
   				<tr>
   					<td valign="top">
   						<div align="right">
-  							<label for="comments">Comments:</label>
+  							<label for="comments">Comments</label>
   						</div>
   					</td>
   					<td valign="top">
@@ -224,15 +225,17 @@
   						</div>
   					</td>
   				</tr>
-  				<tr>
-  					<td colspan = "2" style = "text-align:center">
-  						<div align="center">
-  							<div class="g-recaptcha" data-sitekey="6Len0S4UAAAAAH6WechX_xbc99crzJ18Fx16ssWo"></div>
-  							<label for="g-recaptcha">Please complete reCaptcha</label>												</div>
+  				<tr style="margin: 0 auto;">
+  					<td valign="center" colspan = "2" class="center">
+                  <br/>
+    							<label for="g-recaptcha">Please complete reCaptcha</label>
+                    <br/>  <br/>
+                  <div align="center" class="g-recaptcha" data-sitekey="6Len0S4UAAAAAH6WechX_xbc99crzJ18Fx16ssWo"></div>
+                  <br/>
   					</td>
   				</tr>
   				<tr>
-  					<td colspan="2">
+  					<td colspan="2" class="center">
   						<br/>
   						<input type="submit" class="button" value="Submit Form">
   					</td>
