@@ -2,7 +2,7 @@
 <html lang="en" id="home" >
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<title>Wireless & Infrared Boiler Thermometers | Generator Bus Bar Thermometers
 </title>

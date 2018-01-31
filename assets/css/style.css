@@ -9,6 +9,7 @@ body {
     background-origin: initial;
     background-clip: initial;
     min-height: 100%;
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -18,7 +19,7 @@ body {
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
     font-feature-settings: "pnum";
-    font-variant-numeric: proportional-nums
+    font-variant-numeric: proportional-nums;
 }
 
 * {
