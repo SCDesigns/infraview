@@ -56,7 +56,7 @@
     <section id="landing">
       <div class="container-lg">
         <h1>
-          Infra-View
+          Infra-View&reg;
         </h1>
 				<div id="split"></div>
         <p id="intro">
